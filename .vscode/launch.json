@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - aa",
+            "request": "launch",
+            "mainClass": "com.aditya.java.aa",
+            "projectName": "Java"
+        }
+    ]
+}
