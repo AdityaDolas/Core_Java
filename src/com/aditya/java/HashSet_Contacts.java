@@ -16,23 +16,18 @@ public class HashSet_Contacts {
 
 			// Adding elements using HashSet
 			h.add(s);
-			
+
 			// Displaying the HasSet
 			System.out.println(h);
-			
+
 			// Iterating over HasSet items
 			System.out.println("List:");
-			Iterator<String> i=h.iterator();
+			Iterator<String> i = h.iterator();
 			while (i.hasNext()) {
 				System.out.println(i.next());
-				
+
 			}
 		}
-		
-		
-		
-		
-		
-		
+
 	}
 }
