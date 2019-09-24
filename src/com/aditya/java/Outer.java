@@ -5,6 +5,7 @@ class Outer {
 	class Inner {
 		public void show() {
 			System.out.println("In a nested class method");
+			System.out.println("Outer");
 		}
 	}
 
