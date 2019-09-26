@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class HashMap1 {
 	public static void main(String[] args) {
+		
+		// Hashmap
 		HashMap<Integer, String> hm=new HashMap<>();
 		System.out.println(hm);
 		
@@ -13,6 +15,8 @@ public class HashMap1 {
 		System.out.println("after invoking");
 		for (Map.Entry m:hm.entrySet()){
 			System.out.println(m.getKey()+" "+m.getValue());
+			
+			
 		}
 		
 	}
