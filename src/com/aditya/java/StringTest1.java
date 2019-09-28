@@ -15,6 +15,8 @@ import java.lang.*;
 
 		// Declare String using new operator
 		String s1 = new String("GeeksforGeeks");
+		
+		String s1 = new String("GeeksforGeeks");
 
 		// Prints the String.
 		System.out.println("String s1 = " + s1);
