@@ -27,5 +27,6 @@ public class StringTest1 {
 		System.out.println("String s3 = " + s3);
 		System.out.println("String s4 = " + s4);
 		System.out.println("String s5 = " + s5);
+		System.out.println("String s6 = " + s6);
 	}
 }
