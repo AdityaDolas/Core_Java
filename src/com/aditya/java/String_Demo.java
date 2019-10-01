@@ -19,6 +19,7 @@ public class String_Demo {
 		System.out.println(s2.concat(s3));
 		System.out.println(s3.replace('o', 't'));
 		System.out.println(s3.toUpperCase());
+		System.out.println(s3.toLowerCase());
 		
 	}
 	public static void main(String[] args) {
