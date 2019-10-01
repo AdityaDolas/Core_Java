@@ -13,8 +13,8 @@ public class Weekdays {
 	}
 
 	// Get the name for the Week
-	public static String_Demo getDayName(int day) {
-		String_Demo dayName = "";
+	public static String getDayName(int day) {
+		String dayName = "";
 		switch (day) {
 		case 1:
 			dayName = "Monday";

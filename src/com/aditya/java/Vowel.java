@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Vowel {
 
 
-public static void main(String_Demo[] args)
+public static void main(String[] args)
 {
 Scanner in = new Scanner(System.in);
 
 System.out.print("Input an alphabet: ");
-String_Demo input = in.next().toLowerCase();
+String input = in.next().toLowerCase();
 
 boolean uppercase = input.charAt(0) >= 65 && input.charAt(0) <= 90;
 boolean lowercase = input.charAt(0) >= 97 && input.charAt(0) <= 122;

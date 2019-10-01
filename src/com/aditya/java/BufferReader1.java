@@ -13,9 +13,7 @@ public class BufferReader1 {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int a=Integer.parseInt(br.readLine());
-		String_Demo b=br.readLine();
 		System.out.println(a*2);
-		System.out.println(b);
 	}
 
 }
