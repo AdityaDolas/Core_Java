@@ -16,6 +16,8 @@ public class String_Demo {
 		System.out.println(s2.indexOf("o"));
 		System.out.println(s1.lastIndexOf("i"));
 		System.out.println(s3.substring(8));
+		System.out.println(s2.concat(s3));
+		System.out.println(s3.replace('o', 't'));
 		
 	}
 	public static void main(String[] args) {
