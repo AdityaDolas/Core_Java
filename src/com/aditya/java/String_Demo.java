@@ -6,9 +6,10 @@ public class String_Demo {
 		String s2=new String("Hello");
 		System.out.println(s1);
 		System.out.println(s2);
+	
+		System.out.println(s1.length());
+		System.out.println(s1.charAt(1));
 		
-		int len=s1.length();
-		System.out.println(len);
 	}
 	public static void main(String[] args) {
 		String_Demo sd=new String_Demo();
