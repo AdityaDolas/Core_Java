@@ -11,6 +11,7 @@ public class String_Demo {
 		System.out.println(s1.charAt(1));
 		System.out.println(s2.equals(s1));
 		System.out.println(s1.compareTo(s2));
+		System.out.println(s1.startsWith("H"));
 		
 	}
 	public static void main(String[] args) {
