@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class GreatestNumber {
 
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Scanner in = new Scanner(System.in);
 
 		System.out.print("Input the 1st number: ");

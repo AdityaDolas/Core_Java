@@ -1,7 +1,7 @@
 package com.aditya.java;
 
 public class NumberFormatExcep {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		try {
 			int num = Integer.parseInt("akki");
 

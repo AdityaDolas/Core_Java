@@ -3,7 +3,7 @@ package com.aditya.java;
 import java.util.Scanner;
 
 public class MultiplicationTable {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		int n, c;
 
 		System.out.println("Enter an integer to print it's multiplication table:");

@@ -8,7 +8,7 @@ enum Mango {
 		price = p;
 	}int getPrice(){return price;}}
 class Enum1{
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Mango p=Mango.Charie;
 		System.out.println(p.getPrice());
 	}

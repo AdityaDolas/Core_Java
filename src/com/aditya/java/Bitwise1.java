@@ -13,7 +13,7 @@ public class Bitwise1 {
 		System.out.println("Betwise:" + k);
 
 	}
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Bitwise1 b=new Bitwise1();
 		b.bit();
 	}

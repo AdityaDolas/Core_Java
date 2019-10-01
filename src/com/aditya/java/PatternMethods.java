@@ -5,12 +5,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PatternMethods {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the desired pattern : ");
-		String pattern = in.next();
+		String_Demo pattern = in.next();
 		System.out.println("Enter the text : ");
-		String matcher = in.nextLine();
+		String_Demo matcher = in.nextLine();
 		Pattern myPattern2 = Pattern.compile(pattern);
 		Matcher myMatcher2 = myPattern2.matcher(matcher);
 		Boolean myBoolean2 = myMatcher2.matches();

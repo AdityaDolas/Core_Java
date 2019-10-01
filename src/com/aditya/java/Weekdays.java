@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Weekdays {
 
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Input number: ");
 		int day = in.nextInt();
@@ -13,8 +13,8 @@ public class Weekdays {
 	}
 
 	// Get the name for the Week
-	public static String getDayName(int day) {
-		String dayName = "";
+	public static String_Demo getDayName(int day) {
+		String_Demo dayName = "";
 		switch (day) {
 		case 1:
 			dayName = "Monday";

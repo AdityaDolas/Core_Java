@@ -3,7 +3,7 @@ package com.aditya.java;
 import java.util.Scanner;
 
 public class NestedIfElse {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		// Initialized the data types
 		int marksObtained, passingMarks;
 		char Grade = 0;

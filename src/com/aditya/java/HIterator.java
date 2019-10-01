@@ -7,7 +7,7 @@ class Contacts {
 }
 
 public class HIterator {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Contacts a = new Contacts();
 		Contacts b = new Contacts();
 		Contacts c = new Contacts();

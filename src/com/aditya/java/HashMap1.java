@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HashMap1 {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		
 		// Hashmap
-		HashMap<Integer, String> hm=new HashMap<>();
+		HashMap<Integer, String_Demo> hm=new HashMap<>();
 		System.out.println(hm);
 		
 		hm.put(100, "avinash");

@@ -1,25 +1,25 @@
 package com.aditya.java;
 
 public class StringTest1 {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		// Declare String without using new operator
-		String s = "GeeksforGeeks";
+		String_Demo s = "GeeksforGeeks";
 
 		// Prints the String.
 		System.out.println("String s = " + s);
 
 		// Declare String using new operator
-		String s1 = new String("GeeksforGeeks");
+		String_Demo s1 = new String_Demo("GeeksforGeeks");
 
-		String s2 = new String("GeeksforGeekss");
+		String_Demo s2 = new String_Demo("GeeksforGeekss");
 
-		String s3 = new String("GeeksforGeeksss");
+		String_Demo s3 = new String_Demo("GeeksforGeeksss");
 
-		String s4 = new String("GeeksforGeekssss");
+		String_Demo s4 = new String_Demo("GeeksforGeekssss");
 
-		String s5 = new String("GeeksforGeekssssss");
+		String_Demo s5 = new String_Demo("GeeksforGeekssssss");
 
-		String s6 = new String("GeeksforGeeksssssss");
+		String_Demo s6 = new String_Demo("GeeksforGeeksssssss");
 
 		// Prints the String.
 		System.out.println("String s1 = " + s1);

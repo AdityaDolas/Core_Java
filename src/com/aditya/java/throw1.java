@@ -2,7 +2,7 @@ package com.aditya.java;
 
 public class throw1 {
 
-	public static void main(String args[]) {
+	public static void main(String_Demo args[]) {
 		int a[] = new int[2];
 		try {
 			System.out.println("Access element three :" + a[3]);

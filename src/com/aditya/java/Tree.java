@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 public class Tree {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 
 		TreeSet<Integer> t = new TreeSet<>();
 		TreeSet<Integer> h = new TreeSet<>();

@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class NumberOfDaysinMonth {
 
-	public static void main(String[] strings) {
+	public static void main(String_Demo[] strings) {
 
 		Scanner input = new Scanner(System.in);
 
 		int number_Of_DaysInMonth = 0;
-		String MonthOfName = "Unknown";
+		String_Demo MonthOfName = "Unknown";
 
 		System.out.print("Input a month number: ");
 		int month = input.nextInt();

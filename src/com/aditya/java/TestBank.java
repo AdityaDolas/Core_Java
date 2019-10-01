@@ -17,7 +17,7 @@ class PNB extends Bank{
 }
 
 public class TestBank {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Bank b=new SBI();
 		System.out.println("Rate Of Interast");
 	}

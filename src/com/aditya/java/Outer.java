@@ -9,7 +9,7 @@ class Outer {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Outer.Inner in = new Outer().new Inner();
 		in.show();
 	}

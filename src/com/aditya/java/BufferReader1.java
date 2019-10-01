@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class BufferReader1 {
-	public static void main(String args[]) throws Exception {
+	public static void main(String_Demo args[]) throws Exception {
 
 		/*
 		 * Scanner s = new Scanner(System.in); int i = s.nextInt(); String st =s.next();
@@ -13,7 +13,7 @@ public class BufferReader1 {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int a=Integer.parseInt(br.readLine());
-		String b=br.readLine();
+		String_Demo b=br.readLine();
 		System.out.println(a*2);
 		System.out.println(b);
 	}

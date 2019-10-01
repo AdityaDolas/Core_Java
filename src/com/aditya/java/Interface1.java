@@ -17,7 +17,7 @@ class Circle2 implements Drawable{
 }
 
 public class Interface1 {
-	public static void main(String[] args) {
+	public static void main(String_Demo[] args) {
 		Drawable d=new Circle2();
 		d.draw();
 	}
