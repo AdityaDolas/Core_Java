@@ -21,6 +21,7 @@ public class String_Demo {
 		System.out.println(s3.toUpperCase());
 		System.out.println(s3.toLowerCase());
 		
+		
 	}
 	public static void main(String[] args) {
 		String_Demo sd=new String_Demo();
