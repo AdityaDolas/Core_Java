@@ -17,7 +17,7 @@ public class StringsEg {
 
 	// String Compare by equals()
 
-	protected void equalsTo() {
+	protected void equals1() {
 		String s1 = "aditya";
 		String s2 = "aditya";
 		String s3 = new String("adi tya");
@@ -25,11 +25,23 @@ public class StringsEg {
 		System.out.println(s1.equals(s2));
 		System.out.println(s2.equals(s3));
 	}
+	
+	// String Compare by equalsTo()
+	
+	protected void equalsTo() {
+		String s1 = "aditya";
+		String s2 = "aditya";
+		String s3 = new String("aditya"); 
+		
+		System.out.println(s1==s2);
+		System.out.println(s2==s3);
+	}
 
 	public static void main(String[] args) {
-		StringsEg st1 = new StringsEg();
-		// st1.compairTo();
-		// st1.equalsTo();
+		StringsEg st = new StringsEg();
+		// st.compairTo();
+		// st.equals1();
+		//st.equalsTo();
 
 	}
 }
