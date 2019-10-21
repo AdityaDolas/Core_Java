@@ -51,13 +51,21 @@ public class StringsEg {
 			System.out.println("The index is : "+lastIndexOf);
 		}
 	}
+	
+	private void lastIndexof() {
+		String s1 = "aditya";
+		int index = s1.lastIndexOf("a");
+		
+		System.out.println(index);
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
 		// st.compairTo();
 		// st.equals1();
 		// st.equalsTo();
-		st.lastIndex();
+		// st.lastIndex();
+		st.lastIndexof();
 
 	}
 }
