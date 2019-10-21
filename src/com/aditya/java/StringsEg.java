@@ -117,6 +117,11 @@ public class StringsEg {
 			System.out.println(i);
 		}
 	}
+	
+	public void contains() {
+		String s1 = "aditya";
+		System.out.println(s1.contains("i"));
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -129,7 +134,7 @@ public class StringsEg {
 		// st.subPosition();
 		// st.replaceString();
 		// st.reversString();
-		st.searchString();
+		st.contains();
 		
 	}
 }
