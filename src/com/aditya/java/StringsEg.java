@@ -157,7 +157,17 @@ public class StringsEg {
 			System.out.println(w);
 		}
 	}
+	
+	// How to convert a string totally into upper case?
 
+	public void upperCase() {
+		String s1 = "String abc touppercase ";
+		String stringUppercase = s1.toUpperCase();
+		System.out.println(s1);
+		System.out.println(stringUppercase);
+	}
+	
+	
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
 		// st.compairTo();
@@ -171,7 +181,8 @@ public class StringsEg {
 		// st.reversString();
 		// st.contains();
 		// st.nOfSubString();
-		st.splitString();
+		// st.splitString();
+		st.uppercase();
 
 	}
 }
