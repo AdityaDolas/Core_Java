@@ -58,6 +58,24 @@ public class StringsEg {
 		
 		System.out.println(index);
 	}
+	
+	// How to remove a particular character from a string ?
+	
+	public void stringPosition() {
+		String s1 = "this is java";
+		System.out.println(removeCharAt(s1, 3));
+	}
+	public static String removeCharAt(String s, int pos) {
+		return s.substring(0, pos) + s.substring(pos + 1);
+	}
+	
+	public void subPosition() {
+		String s1 = "aditya";
+		System.out.println(s1.substring(3));
+		System.out.println(s1.substring(0, 3));
+		System.out.println(s1.replace("a", ""));
+		
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -65,7 +83,9 @@ public class StringsEg {
 		// st.equals1();
 		// st.equalsTo();
 		// st.lastIndex();
-		st.lastIndexof();
+		// st.lastIndexof();
+		// st.stringPosition();
+		st.subPosition();
 
 	}
 }
