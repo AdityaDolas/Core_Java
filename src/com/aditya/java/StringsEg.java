@@ -104,6 +104,19 @@ public class StringsEg {
 			System.out.println(c1[i]);
 		}
 	}
+	
+	// How to search a word inside a string ?
+	
+	public void searchString() {
+		String s1 = "aditya";
+		int i = s1.indexOf("tya");
+		
+		if(i==-1) {
+			System.out.println("Not Found");
+		} else {
+			System.out.println(i);
+		}
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -115,7 +128,8 @@ public class StringsEg {
 		// st.stringPosition();
 		// st.subPosition();
 		// st.replaceString();
-		st.reversString();
+		// st.reversString();
+		st.searchString();
 		
 	}
 }
