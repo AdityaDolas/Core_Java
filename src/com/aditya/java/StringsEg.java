@@ -95,6 +95,15 @@ public class StringsEg {
 		System.out.println(s1);
 		System.out.println(reverse);
 	}
+	
+	public void reversStringUsingChar() {
+		String s1 = "aditya";
+		char[] c1 = s1.toCharArray();
+		
+		for(int i = c1.length-1; i>=0; i--) {
+			System.out.println(c1[i]);
+		}
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
