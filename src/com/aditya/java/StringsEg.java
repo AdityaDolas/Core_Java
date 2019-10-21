@@ -200,55 +200,64 @@ public class StringsEg {
 		System.out.println(
 				"Time taken for creation" + " of String objects : " + (endTime1 - startTime1) + " milli seconds");
 	}
-	
+
 	// How to optimize string creation?
-	
+
 	public void stringOptimazedMethod() {
 		{
-		      String variables[] = new String[50000];	  
-		      for( int i = 0; i < 50000; i++) {
-		         variables[i] = "s"+i;
-		      }
-		      long startTime0 = System.currentTimeMillis();
-		      
-		      for(int i = 0; i < 50000; i++) {
-		         variables[i] = "hello";
-		      }
-		      long endTime0 = System.currentTimeMillis();
-		      System.out.println("Creation time" 
-		         + " of String literals : "+ (endTime0 - startTime0) 
-		         + " ms" );
-		      long startTime1 = System.currentTimeMillis();
-		      
-		      for(int i = 0; i < 50000; i++) {
-		         variables[i] = new String("hello");
-		      }
-		      long endTime1 = System.currentTimeMillis();
-		      System.out.println("Creation time of" 
-		         + " String objects with 'new' key word : " 
-		         + (endTime1 - startTime1)
-		         + " ms");
-		      long startTime2 = System.currentTimeMillis();
-		      
-		      for(int i = 0; i < 50000; i++) {
-		         variables[i] = new String("hello");
-		         variables[i] = variables[i].intern();		  
-		      }
-		      long endTime2 = System.currentTimeMillis();
-		      System.out.println("Creation time of" 
-		         + " String objects with intern(): " 
-		         + (endTime2 - startTime2)
-		         + " ms");
-		   }
+			String variables[] = new String[50000];
+			for (int i = 0; i < 50000; i++) {
+				variables[i] = "s" + i;
+			}
+			long startTime0 = System.currentTimeMillis();
+
+			for (int i = 0; i < 50000; i++) {
+				variables[i] = "hello";
+			}
+			long endTime0 = System.currentTimeMillis();
+			System.out.println("Creation time" + " of String literals : " + (endTime0 - startTime0) + " ms");
+			long startTime1 = System.currentTimeMillis();
+
+			for (int i = 0; i < 50000; i++) {
+				variables[i] = new String("hello");
+			}
+			long endTime1 = System.currentTimeMillis();
+			System.out.println(
+					"Creation time of" + " String objects with 'new' key word : " + (endTime1 - startTime1) + " ms");
+			long startTime2 = System.currentTimeMillis();
+
+			for (int i = 0; i < 50000; i++) {
+				variables[i] = new String("hello");
+				variables[i] = variables[i].intern();
+			}
+			long endTime2 = System.currentTimeMillis();
+			System.out
+					.println("Creation time of" + " String objects with intern(): " + (endTime2 - startTime2) + " ms");
+		}
 	}
-	
+
 	// How to format strings ?
-	
+
 	public void formateStrings() {
 		double e = Math.E;
 		System.out.format("%f%n", e);
 		System.out.format(Locale.GERMANY, "-10.4f%n%n", e);
-		
+
+	}
+
+	public void formateStrings2() {
+
+		String name = "Hello World";
+		String s1 = String.format("name %s", name);
+		String s2 = String.format("value %f", 32.33434);
+		String s3 = String.format("value %32.12f", 32.33434);
+		System.out.print(s1);
+		System.out.print("\n");
+		System.out.print(s2);
+		System.out.print("\n");
+		System.out.print(s3);
+		System.out.print("\n");
+
 	}
 
 	public static void main(String[] args) {
@@ -269,7 +278,8 @@ public class StringsEg {
 		// st.rigion();
 		// st.stringComparePerformancr();
 		// st.stringOptimazedMethod();
-		st.formateStrings();
+		// st.formateStrings();
+		st.formateStrings2();
 
 	}
 }
