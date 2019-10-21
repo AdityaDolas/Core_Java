@@ -95,57 +95,66 @@ public class StringsEg {
 		System.out.println(s1);
 		System.out.println(reverse);
 	}
-	
+
 	public void reversStringUsingChar() {
 		String s1 = "aditya";
 		char[] c1 = s1.toCharArray();
-		
-		for(int i = c1.length-1; i>=0; i--) {
+
+		for (int i = c1.length - 1; i >= 0; i--) {
 			System.out.println(c1[i]);
 		}
 	}
-	
+
 	// How to search a word inside a string ?
-	
+
 	public void searchString() {
 		String s1 = "aditya";
 		int i = s1.indexOf("tya");
-		
-		if(i==-1) {
+
+		if (i == -1) {
 			System.out.println("Not Found");
 		} else {
 			System.out.println(i);
 		}
 	}
-	
+
 	public void contains() {
 		String s1 = "aditya";
 		System.out.println(s1.contains("i"));
 	}
-	
+
 	// How to split a string into a number of substrings ?
-	
+
 	public void nOfSubString() {
 		String s1 = "jan-feb-march";
 		String[] temp;
 		String delimeter = "-";
 		temp = s1.split(delimeter);
-		
-		for (int i = 0; i<temp.length; i++) {
+
+		for (int i = 0; i < temp.length; i++) {
 			System.out.println(temp[i]);
 			System.out.println("");
 			s1 = "jan.feb.march";
 			delimeter = "\\.";
 			temp = s1.split(delimeter);
 		}
-		for(int i = 0; i<temp.length; i++) {
+		for (int i = 0; i < temp.length; i++) {
 			System.out.println(temp[i]);
 			System.out.println("");
 			temp = s1.split(delimeter, 2);
-			
-			for(int j = 0; j<temp.length; j++) {
+
+			for (int j = 0; j < temp.length; j++) {
 				System.out.println(temp[j]);
 			}
+		}
+	}
+
+	public void splitString() {
+		String s1 = "aditya";
+		String[] words = s1.split("");
+		
+		for(String w:words) {
+			System.out.println(w);
 		}
 	}
 
@@ -161,7 +170,8 @@ public class StringsEg {
 		// st.replaceString();
 		// st.reversString();
 		// st.contains();
-		st.nOfSubString();
-		
+		// st.nOfSubString();
+		st.splitString();
+
 	}
 }
