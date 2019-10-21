@@ -167,6 +167,15 @@ public class StringsEg {
 		System.out.println(stringUppercase);
 	}
 	
+	// How to match regions in strings ?
+	
+	public void rigion() {
+		String sf = "aditya";
+		String ss = "prashant";
+		boolean match = sf.regionMatches(2, ss, 3, 9);
+		System.out.println(match);
+	}
+	
 	
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -182,7 +191,8 @@ public class StringsEg {
 		// st.contains();
 		// st.nOfSubString();
 		// st.splitString();
-		st.uppercase();
+		// st.upperCase();
+		st.rigion();
 
 	}
 }
