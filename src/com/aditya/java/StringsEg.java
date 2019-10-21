@@ -152,12 +152,12 @@ public class StringsEg {
 	public void splitString() {
 		String s1 = "aditya";
 		String[] words = s1.split("");
-		
-		for(String w:words) {
+
+		for (String w : words) {
 			System.out.println(w);
 		}
 	}
-	
+
 	// How to convert a string totally into upper case?
 
 	public void upperCase() {
@@ -166,17 +166,39 @@ public class StringsEg {
 		System.out.println(s1);
 		System.out.println(stringUppercase);
 	}
-	
+
 	// How to match regions in strings ?
-	
+
 	public void rigion() {
 		String sf = "aditya";
 		String ss = "prashant";
 		boolean match = sf.regionMatches(2, ss, 3, 9);
 		System.out.println(match);
 	}
-	
-	
+
+	// How to compare performance of string creation ?
+
+	public void stringComparePerformancr() {
+		long startTime = System.currentTimeMillis();
+
+		for (int i = 0; i < 50000; i++) {
+			String s1 = "hello";
+			String s2 = "hello";
+		}
+		long endTime = System.currentTimeMillis();
+		System.out.println(
+				"Time taken for creation" + " of String literals : " + (endTime - startTime) + " milli seconds");
+		long startTime1 = System.currentTimeMillis();
+
+		for (int i = 0; i < 50000; i++) {
+			String s3 = new String("hello");
+			String s4 = new String("hello");
+		}
+		long endTime1 = System.currentTimeMillis();
+		System.out.println(
+				"Time taken for creation" + " of String objects : " + (endTime1 - startTime1) + " milli seconds");
+	}
+
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
 		// st.compairTo();
@@ -192,7 +214,8 @@ public class StringsEg {
 		// st.nOfSubString();
 		// st.splitString();
 		// st.upperCase();
-		st.rigion();
+		// st.rigion();
+		st.stringComparePerformancr();
 
 	}
 }
