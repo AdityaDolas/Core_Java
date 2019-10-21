@@ -1,5 +1,7 @@
 package com.aditya.java;
 
+import java.util.Locale;
+
 public class StringsEg {
 
 	// ===> How to compare two Strings ?
@@ -199,6 +201,8 @@ public class StringsEg {
 				"Time taken for creation" + " of String objects : " + (endTime1 - startTime1) + " milli seconds");
 	}
 	
+	// How to optimize string creation?
+	
 	public void stringOptimazedMethod() {
 		{
 		      String variables[] = new String[50000];	  
@@ -237,6 +241,15 @@ public class StringsEg {
 		         + " ms");
 		   }
 	}
+	
+	// How to format strings ?
+	
+	public void formateStrings() {
+		double e = Math.E;
+		System.out.format("%f%n", e);
+		System.out.format(Locale.GERMANY, "-10.4f%n%n", e);
+		
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -255,7 +268,8 @@ public class StringsEg {
 		// st.upperCase();
 		// st.rigion();
 		// st.stringComparePerformancr();
-		st.stringOptimazedMethod();
+		// st.stringOptimazedMethod();
+		st.formateStrings();
 
 	}
 }
