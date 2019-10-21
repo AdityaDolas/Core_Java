@@ -122,6 +122,32 @@ public class StringsEg {
 		String s1 = "aditya";
 		System.out.println(s1.contains("i"));
 	}
+	
+	// How to split a string into a number of substrings ?
+	
+	public void nOfSubString() {
+		String s1 = "jan-feb-march";
+		String[] temp;
+		String delimeter = "-";
+		temp = s1.split(delimeter);
+		
+		for (int i = 0; i<temp.length; i++) {
+			System.out.println(temp[i]);
+			System.out.println("");
+			s1 = "jan.feb.march";
+			delimeter = "\\.";
+			temp = s1.split(delimeter);
+		}
+		for(int i = 0; i<temp.length; i++) {
+			System.out.println(temp[i]);
+			System.out.println("");
+			temp = s1.split(delimeter, 2);
+			
+			for(int j = 0; j<temp.length; j++) {
+				System.out.println(temp[j]);
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -134,7 +160,8 @@ public class StringsEg {
 		// st.subPosition();
 		// st.replaceString();
 		// st.reversString();
-		st.contains();
+		// st.contains();
+		st.nOfSubString();
 		
 	}
 }
