@@ -76,6 +76,15 @@ public class StringsEg {
 		System.out.println(s1.replace("a", ""));
 		
 	}
+	
+	// How to replace a substring inside a string by another one ?
+	
+	public void replaceString() {
+		String s1 = "aditya adi";
+		System.out.println(s1.replace("a", "w"));
+		System.out.println(s1.replaceFirst("adi", "asd"));
+		System.out.println(s1.replaceAll("adi", "ida"));
+	}
 
 	public static void main(String[] args) {
 		StringsEg st = new StringsEg();
@@ -85,7 +94,8 @@ public class StringsEg {
 		// st.lastIndex();
 		// st.lastIndexof();
 		// st.stringPosition();
-		st.subPosition();
+		// st.subPosition();
+		st.replaceString();
 
 	}
 }
