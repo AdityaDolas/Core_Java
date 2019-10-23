@@ -4,7 +4,7 @@ import java.util.Hashtable;
 import java.util.Scanner;
 
 public class HashTable1 {
-	public static void main(String[] args) {
+	public void display() {
 		Hashtable<Integer, String> ht = new Hashtable<>();
 		for (;;) {
 			System.out.println("Enter:");
@@ -14,5 +14,9 @@ public class HashTable1 {
 			ht.put(i, s);
 			System.out.println(ht);
 		}
+	}
+	public static void main(String[] args) {
+		HashTable1 ht = new HashTable1();
+		ht.display();
 	}
 }
