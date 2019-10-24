@@ -13,9 +13,11 @@ public class Oops {
 		// System.out.println(s);
 	}
 	
-	// final keyword is applicable to method variable and classes.
-	// final keyword cannot be used with an interface in Java.
-	// final keyword used with data members means value cannot be replaced or modify.
+	// FINAL KEYWORD :-
+	
+	// FINAL keyword is applicable to method variable and classes.
+	// FINAL keyword cannot be used with an interface in Java.
+	// FINAL keyword used with data members means value cannot be replaced or modify.
 	// Example :-
 	
 	public void finalExample() {
@@ -24,8 +26,13 @@ public class Oops {
 		// i = 45;
 	}
 	
-	// Class that is declared as final cannot be used for the purpose of Inheritance.
-	// Method declared as final cannot be Overridden.
+	// Class that is declared as FINAL cannot be used for the purpose of Inheritance.
+	// Method declared as FINAL cannot be Overridden.
+	
+	// STATIC KEYWORD :-
+	
+	
+	
 	
 	
 	public static void main(String[] args) {
