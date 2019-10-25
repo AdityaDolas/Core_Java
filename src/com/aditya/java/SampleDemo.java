@@ -191,6 +191,15 @@ public class SampleDemo {
 		sb.delete(2, 4);
 		System.out.println("delete index 2 and 4: "+sb);
 		
+		// String is a class
+		// String class comes from java.lang package
+		// The following code snippet will create a new String object in the heap memory with value Hello
+		// and assign it to the reference variable st1.
+		// In addition it will create object with the value Hello in the String constant pool
+		// In JVM, a special memory named String constant pool is used to store String literals.
+		// Heap Memory is an area within the JVM where objects are stored.
+		String st1 = new String();
+		
 
 	}
 
@@ -210,6 +219,6 @@ public class SampleDemo {
 		// s.add(3, 5, 7);
 		// s.displayFinal();
 		// s.StringDemo();
-		s.stringBuildAndBuff();
+		// s.stringBuildAndBuff();
 	}
 }
