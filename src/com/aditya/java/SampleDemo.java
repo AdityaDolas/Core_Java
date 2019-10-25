@@ -63,14 +63,24 @@ public class SampleDemo {
 		int t = p + q + r;
 		System.out.println(t);
 	}
+	
+	// Final Variable
+	
+	final int pi = 3;
+	
+	void displayFinal() {
+		// pi++; // This will give compile-time error because Final Variable cannot be modified
+		System.out.println(pi);
+	}
 
 	public static void main(String[] args) {
 		SampleDemo s = new SampleDemo();
 		// s.counter();
 		// s.sCounter();
 		// s.swappingValues();
-		s.add(4);
-		s.add(6);
-		s.add(3, 5, 7);
+		// s.add(4);
+		// s.add(6);
+		// s.add(3, 5, 7);
+		s.displayFinal();
 	}
 }
