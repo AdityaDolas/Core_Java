@@ -165,41 +165,57 @@ public class SampleDemo {
 		System.out.println("String1 equalsIgnoreCase String2: " + String1.equalsIgnoreCase(String2));
 	}
 
-	
 	// StringBuilder and StringBuffer
-		// This classes are mutable classes as they do not create any new String Object
-		// when manipulated
-		// Manipulations like appending, concatenating and deleting with string literals.
-	
+	// This classes are mutable classes as they do not create any new String Object
+	// when manipulated
+	// Manipulations like appending, concatenating and deleting with string
+	// literals.
+
 	public void stringBuildAndBuff() {
 
 		// append()
 		StringBuilder sb = new StringBuilder("Aditya ");
-		System.out.println("StringBuilder: " +sb);
+		System.out.println("StringBuilder: " + sb);
 		sb.append("Dolas");
-		System.out.println("append dolas: "+sb);
-		
+		System.out.println("append dolas: " + sb);
+
 		// insert()
 		sb.insert(7, "B ");
-		System.out.println("insert B at index 7: "+sb);
-		
+		System.out.println("insert B at index 7: " + sb);
+
 		// reverse()
 		sb.reverse();
 		System.out.println(sb);
-		
+
 		// delete()
 		sb.delete(2, 4);
-		System.out.println("delete index 2 and 4: "+sb);
-		
+		System.out.println("delete index 2 and 4: " + sb);
+
 		// String is a class
 		// String class comes from java.lang package
-		// The following code snippet will create a new String object in the heap memory with value Hello
+		// The following code snippet will create a new String object in the heap memory
+		// with value Hello
 		// and assign it to the reference variable st1.
-		// In addition it will create object with the value Hello in the String constant pool
-		// In JVM, a special memory named String constant pool is used to store String literals.
+		// In addition it will create object with the value Hello in the String constant
+		// pool
+		// In JVM, a special memory named String constant pool is used to store String
+		// literals.
 		// Heap Memory is an area within the JVM where objects are stored.
 		String st1 = new String();
-		
+
+	}
+	
+	
+	// Asterisk left pyramid pattern
+	public void asterisk() {
+		int i;
+		int j;
+		for (i = 0; i <= 5; i++) {
+			for (j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 
 	}
 
@@ -220,5 +236,6 @@ public class SampleDemo {
 		// s.displayFinal();
 		// s.StringDemo();
 		// s.stringBuildAndBuff();
+		s.asterisk();
 	}
 }
