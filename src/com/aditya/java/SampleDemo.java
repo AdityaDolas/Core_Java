@@ -72,15 +72,37 @@ public class SampleDemo {
 		// pi++; // This will give compile-time error because Final Variable cannot be modified
 		System.out.println(pi);
 	}
-
+	
+	// Constructors :-
+		// Constructors has same name as class name
+		// Constructors has no return type
+		// Constructors invokes automatically with object creation
+		// With Object creation all instance variable will assign with default values
+	
+	int a;
+	
+	// Default Constructor
+	public SampleDemo() { 
+		System.out.println("Default Constructor");
+	}
+	
+	// Parameterized Constructor
+	public SampleDemo(int i) {
+		System.out.println("Parameterized Constructor");
+	}
+	
+	
+	// public static void main (String[] args) is known as Copy Constructor
 	public static void main(String[] args) {
 		SampleDemo s = new SampleDemo();
+		SampleDemo s1 = new SampleDemo(5);
+		
 		// s.counter();
 		// s.sCounter();
 		// s.swappingValues();
 		// s.add(4);
 		// s.add(6);
 		// s.add(3, 5, 7);
-		s.displayFinal();
+		// s.displayFinal();
 	}
 }
