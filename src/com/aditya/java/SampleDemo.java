@@ -94,9 +94,12 @@ public class SampleDemo {
 	
 	// public static void main (String[] args) is known as Copy Constructor
 	public static void main(String[] args) {
+		// Calling Default Constructor
 		SampleDemo s = new SampleDemo();
+		new SampleDemo();
+		// Calling Default Constructor
 		SampleDemo s1 = new SampleDemo(5);
-		
+		new SampleDemo(5);
 		// s.counter();
 		// s.sCounter();
 		// s.swappingValues();
