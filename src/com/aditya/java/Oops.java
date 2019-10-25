@@ -31,6 +31,9 @@ public class Oops {
 	
 	// STATIC KEYWORD :-
 	
+	// We can apply STATIC keyword to Method, Variables and Inner Classes.
+	
+	
 	
 	
 	
