@@ -29,29 +29,48 @@ public class SampleDemo {
 		System.out.println(a);
 		System.out.println(a + a);
 	}
-	
+
 	void swappingValues() {
 
 		System.out.println("Enter value of n1 and n2 : ");
 		Scanner sc = new Scanner(System.in);
 		int n1 = sc.nextInt();
 		int n2 = sc.nextInt();
-		System.out.println("Before Swapping value of n1 : "+ n1 + " and n2 :"+ n2+" : ");
+		System.out.println("Before Swapping value of n1 : " + n1 + " and n2 :" + n2 + " : ");
 		int temp;
-		
+
 		temp = n1;
 		n1 = n2;
 		n2 = n1;
-		
-		
-		System.out.println("After Swapping value of n1 : "+ n1 + " and n2: "+ n2+" : ");
-		
+
+		System.out.println("After Swapping value of n1 : " + n1 + " and n2: " + n2 + " : ");
+
+	}
+
+	// Method Overloading
+	
+	void add(int a) {
+		a++;
+		System.out.println(a);
+	}
+
+	void add(float m) {
+		m++;
+		System.out.println(m);
+	}
+
+	void add(int p, int q, int r) {
+		int t = p + q + r;
+		System.out.println(t);
 	}
 
 	public static void main(String[] args) {
 		SampleDemo s = new SampleDemo();
 		// s.counter();
 		// s.sCounter();
-		s.swappingValues();
+		// s.swappingValues();
+		s.add(4);
+		s.add(6);
+		s.add(3, 5, 7);
 	}
 }
