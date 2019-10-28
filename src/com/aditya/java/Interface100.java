@@ -1,7 +1,16 @@
 package com.aditya.java;
 
-public class Interface100 {
+interface access {
+	void display();
+}
+
+class Interface100 implements access {
+	public void display() {
+		System.out.println("example of interface");
+	}
+
 	public static void main(String[] args) {
-		System.out.println("example of ablstract methods");
+		Interface100 a = new Interface100();
+		a.display();
 	}
 }
