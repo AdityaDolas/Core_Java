@@ -1,5 +1,7 @@
 package com.aditya.java;
 
+import java.awt.DisplayMode;
+
 // Constructor is the block of code similar as method.
 // Constructor is called when an instance of class is created.
 // Creating an instance of an class is same as creating an object.
@@ -17,7 +19,7 @@ public class constructorsDemo {
 	constructorsDemo() {
 		System.out.println("Bike is created.");
 	}
-	
+
 	// Inner Class
 	class sd2 {
 		int id;
@@ -36,3 +38,30 @@ public class constructorsDemo {
 
 	}
 }
+
+
+// This is an example of abstract method.
+abstract class ab {
+	abstract void display();
+}
+
+	class display1 extends ab{
+	void display() {
+		System.out.println("This is the abstract method.");
+	}
+	public static void main(String[] args) {
+		display1 d = new display1();
+		d.display();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
