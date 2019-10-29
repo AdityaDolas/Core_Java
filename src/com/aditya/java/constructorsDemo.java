@@ -17,7 +17,22 @@ public class constructorsDemo {
 	constructorsDemo() {
 		System.out.println("Bike is created.");
 	}
+	
+	// Inner Class
+	class sd2 {
+		int id;
+		String name;
+
+		void displey() {
+			System.out.println(id);
+			System.out.println(name);
+		}
+	}
+
 	public static void main(String[] args) {
 		constructorsDemo cd = new constructorsDemo();
+		constructorsDemo.sd2 cs = cd.new sd2();
+		cs.displey();
+
 	}
 }
