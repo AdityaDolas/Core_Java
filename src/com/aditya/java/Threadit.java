@@ -1,5 +1,7 @@
 package com.aditya.java;
 
+import java.util.Scanner;
+
 /**
  * @author Aditya
  *
@@ -31,7 +33,10 @@ class runit implements Runnable {
 
 class sleeping extends Thread {
 	public void run() {
-		for (int i = 0; i <= 100; i++) {
+		System.out.println("Enter: ");
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for (int i = 0; i <= t; i++) {
 			try {
 				for (int j = 50; j <= 100; j++) {
 					Thread.sleep(j);
