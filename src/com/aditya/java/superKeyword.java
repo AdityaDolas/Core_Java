@@ -59,3 +59,69 @@ class Test2 {
 		d.work();
 	}
 }
+
+// Following example shows that super is used to invoke parent class constructor.
+
+class animal3{
+	public animal3() {
+		System.out.println("animal is created...");
+	}
+}
+
+class dog3 extends animal3{
+	dog3(){
+		super();
+		System.out.println("dog is created...");
+	}
+}
+
+class Test3{
+	public static void main(String[] args) {
+		dog3 d3 = new dog3();
+		
+	}
+}
+
+// super() is added in each class constructor automatically by the compiler if there is no super or this.
+
+// Following example shows that super() is provided by the compiler implicitly.
+
+class animal4{
+	public animal4() {
+		// animal4() created automatically
+		// super()  created automatically
+		System.out.println("amimal4 is created...");
+	}
+}
+
+class dog4 extends animal4{
+	public dog4() {
+		System.out.println("dog4 is created...");
+	}
+}
+
+class Test4{
+	public static void main(String[] args) {
+		dog4 d4 = new dog4();
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
