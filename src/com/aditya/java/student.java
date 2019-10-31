@@ -29,3 +29,21 @@ public class student{
 		s2.display();
 	}
 }
+
+// In the following example we are going to use this keyword to invoke current class instance
+
+class a{
+	void m() {
+		System.out.println("hello m");
+	}
+	void n() {
+		System.out.println("hello n");
+		// m(); is same as this.m()
+		this.m();
+		
+	}
+	public static void main(String[] args) {
+		a a1 = new a();
+		a1.n();
+	}
+}
