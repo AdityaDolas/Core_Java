@@ -30,7 +30,7 @@ public class student{
 	}
 }
 
-// In the following example we are going to use this keyword to invoke current class instance
+// In the following example we use this keyword to invoke current class instance.
 
 class a{
 	void m() {
@@ -47,3 +47,32 @@ class a{
 		a1.n();
 	}
 }
+
+// In the following example we use this keyword to invoke current class constructor.
+
+class b{
+	b(){
+		System.out.println("hello b");
+	}
+	b(int x){
+		this();
+		System.out.println(x);
+	}
+	public static void main(String[] args) {
+		b b1 = new b(10);
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
