@@ -143,4 +143,9 @@ class B {
 // internal details of a class, for example, HashMap encapsulate how it store
 // elements and calculate hash values.
 
-
+// hat Is Abstract Class? A class which has the abstract keyword in its
+// declaration is called abstract class. Abstract classes should have at least
+// one abstract method. , i.e., methods without a body. It can have multiple
+// concrete methods. Abstract classes allow you to create blueprints for
+// concrete classes. But the inheriting class should implement the abstract
+// method. Abstract classes cannot be instantiated.
