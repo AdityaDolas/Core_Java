@@ -127,7 +127,6 @@ class B {
 		System.out.println("Welcome");
 	}
 
-
 	// class C extends A,B{//suppose if it were
 
 	public static void main(String args[]) {
@@ -135,3 +134,13 @@ class B {
 		// obj.msg();// Now which msg() method would be invoked?
 	}
 }
+
+// Inheritance is an object oriented concept which creates a parent-child
+// relationship. It is one of the ways to reuse the code written for parent
+// class but it also forms the basis of Polymorphism.
+
+// Encapsulation is an object oriented concept which is used to hide the
+// internal details of a class, for example, HashMap encapsulate how it store
+// elements and calculate hash values.
+
+
