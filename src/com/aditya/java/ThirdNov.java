@@ -17,15 +17,30 @@ abstract class a2{
 }
 
 interface i1{
+	// we cannot create the constructor here
 	public void displayi1();
 }
 
-public class ThirdNov extends a1 implements i1 {
+interface i2{
+	public void displayi2();
+}
+
+public class ThirdNov extends a1 implements i1, i2 {
 	public void displaya1() {
 		System.out.println("Abstraction");
 	}
 	public void display2() {
 		System.out.println("Abstraction3");
+	}
+	
+	@Override
+	public void displayi1() {
+		System.out.println("Interface 1");
+	}
+	
+	@Override
+	public void displayi2() {
+		System.out.println("Interface 2");
 	}
 	
 	public static void main(String[] args) {
@@ -35,6 +50,8 @@ public class ThirdNov extends a1 implements i1 {
 			// System.out.println("hi");
 		};
 		tn.displaya1();
+		tn.display2();
+		tn.displayi1();
 		tn.display2();
 	}
 }
