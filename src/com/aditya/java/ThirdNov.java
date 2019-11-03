@@ -115,3 +115,20 @@ class outer1{
 	}
 }
 
+class outer2{
+	public void method1() {
+		System.out.println("Outer Class 1");
+	}
+	public void inner12(){
+		class inner31{
+			public void innerinner() {
+				System.out.println("Inner Class 123");
+			}
+		}
+	}
+	public static void main(String[] args) {
+		outer2 o2 = new outer2();
+		o2.inner12();
+	}
+}
+
