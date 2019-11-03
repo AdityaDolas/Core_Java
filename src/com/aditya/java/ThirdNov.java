@@ -26,11 +26,14 @@ interface i2{
 }
 
 public class ThirdNov extends a1 implements i1, i2 {
-	public void ThirdNov() {
+	public  ThirdNov() {
 		System.out.println("Default Constructor");
 	}
-	public void ThirdNov(int i) {
+	public  ThirdNov(int i) {
 		System.out.println("Parameterized Constructor");
+	}
+	public  ThirdNov(String s) {
+		System.out.println("Parameterized Constructor 2");
 	}
 	
 	public void displaya1() {
@@ -52,6 +55,8 @@ public class ThirdNov extends a1 implements i1, i2 {
 	
 	public static void main(String[] args) {
 		ThirdNov tn = new ThirdNov();
+		ThirdNov tn1 = new ThirdNov(24);
+		ThirdNov tn2 = new ThirdNov("Aditya");
 		a2 a = new a2() {
 			// What to write here
 			// System.out.println("hi");
