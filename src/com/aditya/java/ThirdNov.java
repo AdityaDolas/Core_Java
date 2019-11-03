@@ -22,6 +22,8 @@ interface i1{
 }
 
 interface i2{
+	int x = 21;
+	void getAge();
 	public void displayi2();
 }
 
@@ -57,6 +59,22 @@ public class ThirdNov extends a1 implements i1, i2 {
 		ThirdNov tn = new ThirdNov();
 		ThirdNov tn1 = new ThirdNov(24);
 		ThirdNov tn2 = new ThirdNov("Aditya");
+		i2 i = new i2() {
+			
+			@Override
+			public void getAge() {
+				System.out.println("Anonymouse Class 1");
+				
+			}
+			
+			@Override
+			public void displayi2() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		i.getAge();
+		
 		a2 a = new a2() {
 			// What to write here
 			// System.out.println("hi");
