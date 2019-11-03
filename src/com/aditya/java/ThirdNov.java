@@ -26,6 +26,13 @@ interface i2{
 }
 
 public class ThirdNov extends a1 implements i1, i2 {
+	public void ThirdNov() {
+		System.out.println("Default Constructor");
+	}
+	public void ThirdNov(int i) {
+		System.out.println("Parameterized Constructor");
+	}
+	
 	public void displaya1() {
 		System.out.println("Abstraction");
 	}
@@ -53,5 +60,6 @@ public class ThirdNov extends a1 implements i1, i2 {
 		tn.display2();
 		tn.displayi1();
 		tn.display2();
+		
 	}
 }
