@@ -1,5 +1,7 @@
 package com.aditya.java;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 abstract class a1 {
 	abstract void displaya1();
 }
@@ -69,11 +71,13 @@ public class ThirdNov extends a1 implements i1, i2 {
 			
 			@Override
 			public void displayi2() {
-				// TODO Auto-generated method stub
+				System.out.println("Anonymouse Class 2");
 				
 			}
 		};
 		i.getAge();
+		i.displayi2();
+		
 		
 		a2 a = new a2() {
 			// What to write here
@@ -83,6 +87,11 @@ public class ThirdNov extends a1 implements i1, i2 {
 		tn.display2();
 		tn.displayi1();
 		tn.display2();
+		
+	}
+	@Override
+	public void getAge() {
+		// TODO Auto-generated method stub
 		
 	}
 }
