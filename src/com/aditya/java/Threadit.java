@@ -36,11 +36,14 @@ class sleeping extends Thread {
 		System.out.println("Enter: ");
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
-		for (int i = 0; i <= t; i++) {
+		for (int i = 2; i <= t;i=i+2) {
 			try {
-				for (int j = 50; j <= 100; j++) {
+				// i++ i.e. i=i+2
+				for (int j = 0; j <= 1000; j=j+100) {
 					Thread.sleep(j);
+					
 				}
+				
 			} catch (InterruptedException e) {
 				System.out.println(e);
 			}
