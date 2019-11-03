@@ -16,7 +16,11 @@ abstract class a2{
 	}
 }
 
-public class ThirdNov extends a1 {
+interface i1{
+	public void displayi1();
+}
+
+public class ThirdNov extends a1 implements i1 {
 	public void displaya1() {
 		System.out.println("Abstraction");
 	}
