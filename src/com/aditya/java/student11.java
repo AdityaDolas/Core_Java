@@ -9,30 +9,30 @@ package com.aditya.java;
 // this can be used to return the current class instance from the method.
 
 
-public class student{
+public class student11{
 	int rollno;
 	String name;
 	float fee;
-	student(int rollno, String name, float fee){
+	student11(int rollno, String name, float fee){
 		// If we don't use this keyword here the output will be default values.
 		this.rollno=rollno;
 		this.name= name;
 		this.fee= fee;
 	}
-	void display() {
+	void display11() {
 		System.out.println(name+" "+rollno+" "+fee);
 	}
 	public static void main(String[] args) {
-		student s1 = new student(1, "Amit", 500);
-		student s2 = new student(2, "Sumit", 500);
-		s1.display();
-		s2.display();
+		student11 s1 = new student11(1, "Amit", 500);
+		student11 s2 = new student11(2, "Sumit", 500);
+		s1.display11();
+		s2.display11();
 	}
 }
 
 // In the following example we use this keyword to invoke current class instance.
 
-class a{
+class a11{
 	void m() {
 		System.out.println("hello m");
 	}
@@ -43,27 +43,26 @@ class a{
 		
 	}
 	public static void main(String[] args) {
-		a a1 = new a();
+		a11 a1 = new a11();
 		a1.n();
 	}
 }
 
 // In the following example we use this keyword to invoke current class constructor.
 
-class b{
-	b(){
+class b11{
+	b11(){
 		System.out.println("hello b");
 	}
-	b(int x){
+	b11(int x){
 		this();
 		System.out.println(x);
 	}
 	public static void main(String[] args) {
-		b b1 = new b(10);
+		b11 b1 = new b11(10);
 		
 	}
 }
-
 
 
 
