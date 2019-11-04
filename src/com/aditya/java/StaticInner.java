@@ -15,3 +15,7 @@ public class StaticInner {
 		vc.validate();
 	}
 }
+
+class PaymentDetails{
+	private static String fieldtovalidate;
+}

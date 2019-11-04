@@ -13,7 +13,7 @@ abstract class a2 {
 
 	public void display2() {
 		// why this is not printing
-		System.out.println("Abstraction2");
+		System.out.println("kdjfhgfshfshjksdhfisuhfsiufhseiu");
 	}
 }
 
@@ -65,6 +65,7 @@ public class ThirdNov extends a1 implements i1, i2 {
 		ThirdNov tn = new ThirdNov();
 		ThirdNov tn1 = new ThirdNov(24);
 		ThirdNov tn2 = new ThirdNov("Aditya");
+		
 		i2 i = new i2() {
 
 			@Override
@@ -81,11 +82,17 @@ public class ThirdNov extends a1 implements i1, i2 {
 		};
 		i.getAge();
 		i.displayi2();
+		
 
 		a2 a = new a2() {
-			// What to write here
-			// System.out.println("hi");
+			@Override
+			public
+			void display2(){
+				System.out.println("display2");
+			}
 		};
+		
+		a.display2();
 		tn.displaya1();
 		tn.display2();
 		tn.displayi1();
@@ -129,6 +136,15 @@ class outer2{
 	public static void main(String[] args) {
 		outer2 o2 = new outer2();
 		o2.inner12();
+		
+		a2 a = new a2() {
+			@Override
+			public
+			void display2(){
+				System.out.println("display2");
+			}
+		};
+
 	}
 }
 
