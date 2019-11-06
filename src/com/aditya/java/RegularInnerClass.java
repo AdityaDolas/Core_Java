@@ -42,28 +42,40 @@ class staticInnerClass {
 	}
 }
 
-class methodLocalInnerClass{
+class methodLocalInnerClass {
 	void outermlic() {
-		final int x =98;
+		final int x = 98;
 		System.out.println("inside outer method");
-		
-		class innermlic{
+
+		class innermlic {
 			void innerMethod() {
-				System.out.println("x = "+x);
+				System.out.println("x = " + x);
 			}
 		}
 		innermlic i = new innermlic();
 		i.innerMethod();
 	}
+
 	public static void main(String[] args) {
 		methodLocalInnerClass m = new methodLocalInnerClass();
 		m.outermlic();
 	}
 }
 
+class DemoAnonymouseClass {
+	void show() {
+		System.out.println("show method of super class");
+	}
+}
 
-
-
-
-
-
+class Flavor1Demo {
+	static DemoAnonymouseClass d = new DemoAnonymouseClass() {
+		void show() {
+			super.show();
+			System.out.println("I am in a Anonymous Class");
+		}
+	};
+	public static void main(String[] args) {
+		d.show();
+	}
+}
