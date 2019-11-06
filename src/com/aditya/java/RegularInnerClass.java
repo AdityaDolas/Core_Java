@@ -41,3 +41,29 @@ class staticInnerClass {
 		// innerc2();
 	}
 }
+
+class methodLocalInnerClass{
+	void outermlic() {
+		final int x =98;
+		System.out.println("inside outer method");
+		
+		class innermlic{
+			void innerMethod() {
+				System.out.println("x = "+x);
+			}
+		}
+		innermlic i = new innermlic();
+		i.innerMethod();
+	}
+	public static void main(String[] args) {
+		methodLocalInnerClass m = new methodLocalInnerClass();
+		m.outermlic();
+	}
+}
+
+
+
+
+
+
+
