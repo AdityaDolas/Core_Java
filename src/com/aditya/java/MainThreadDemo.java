@@ -19,7 +19,7 @@ public class MainThreadDemo {
 	
 }
 
-// How to run Tread by extending
+// How to run Thread by extending Thread
 class Multi extends Thread{
 	public void run() {
 		System.out.println("Thread is running...");
@@ -30,9 +30,46 @@ class Multi extends Thread{
 	}
 }
 
+// How to run Thread by implementing Runnable interface
+class Multi3 implements Runnable{
+	public void run() {
+		System.out.println("Thread is running...");
+	}
+	
+	public static void main(String[] args) {
+		Multi3 m1 = new Multi3();
+		Thread ti = new Thread(m1);
+		ti.start();
+	}
+}
 
+// sleep()
+class TestSleepMethod1 extends Thread{
+	public void run() {
+		for(int i = 1; i<51 ; i++) {
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				System.out.println(e);
+			}
+			System.out.println(i);
+		}
+	}
+	public static void main(String[] args) {
+		TestSleepMethod1 ts = new TestSleepMethod1();
+		ts.start();
+	}
+}
 
-
+class TestThreadClass extends Thread{
+	public void run() {
+		System.out.println("running...");
+	}
+	public static void main(String[] args) {
+		TestThreadClass  tc = new TestThreadClass();
+		tc.start();
+	}
+}
 
 
 
