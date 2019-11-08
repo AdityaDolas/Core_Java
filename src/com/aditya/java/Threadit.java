@@ -56,3 +56,56 @@ class sleeping extends Thread {
 		sl.start();
 	}
 }
+
+class threadrun{
+	public static void main(String[] args) {
+	Thread t = Thread.currentThread();
+	System.out.println(t);
+	t.setName("Aditya");
+	System.out.println(t);
+	System.out.println("Thread is going to sleep for 10 seconds...");
+	System.out.println("Thread will appear after 10 seconds...");
+	try {
+		t.sleep(10000);
+	} catch (InterruptedException e) {
+		System.out.println("Main Thread is interrupted");
+	}
+	System.out.println("Thread exist now.");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------
