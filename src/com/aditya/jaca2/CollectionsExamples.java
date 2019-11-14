@@ -3,6 +3,7 @@ package com.aditya.jaca2;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Vector;
 
 public class CollectionsExamples {
 	public static void main(String[] args) {
@@ -32,6 +33,20 @@ class linkedList{
 		ls.add("avinash");
 
 		Iterator itr = ls.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+	}
+}
+
+class vector{
+	public static void main(String[] args) {
+		Vector<String> vs = new Vector<>();
+		vs.add("aditya");
+		vs.add("rupali");
+		vs.add("rakhi");
+		
+		Iterator<String> itr = vs.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
