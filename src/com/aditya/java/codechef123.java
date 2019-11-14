@@ -33,7 +33,7 @@ import java.util.Scanner;
 	}
 }
 */
-public class codechef {
+public class codechef123 {
 	public static void main(String[] args) {
 		ArrayList<String> weapons = new ArrayList<>();
 

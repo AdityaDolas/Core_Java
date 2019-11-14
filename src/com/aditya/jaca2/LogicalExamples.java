@@ -8,6 +8,7 @@ public class LogicalExamples {
 	}
 }
 
+// Java Program for addition of two numbers
 class AddTwoNumbers {
 	public static void main(String[] args) {
 
@@ -35,6 +36,7 @@ class AddTwoNumbers {
 	}
 }
 
+// Java Program to check even or odd Number
 class evenOdd {
 	public static void main(String[] args) {
 		for (;;) {
@@ -51,6 +53,29 @@ class evenOdd {
 					System.out.println(i + " is Odd Number.");
 			} catch (Exception e) {
 				System.out.println("Enter integers Only.");
+			}
+		}
+	}
+}
+
+// Java Program to find the prime numbers
+class primeNumber {
+	public static void main(String[] args) {
+		for (;;) {
+			System.out.println("Enter: ");
+			Scanner sc = new Scanner(System.in);
+			int a = sc.nextInt();
+			boolean isPrime = true;
+			
+			for (int i = 2; i <= a; i++) {
+				
+				for (int j = i - 1; j >= 2; j--) {
+					if (i % j == 0) {
+						isPrime = false;
+					}
+				}
+				if (isPrime)
+					System.out.println(a + " is prime.");
 			}
 		}
 	}
