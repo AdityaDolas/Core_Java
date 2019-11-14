@@ -12,21 +12,21 @@ public class CollectionsExamples {
 	}
 }
 
-class arrayList{
+class arrayList {
 	public static void main(String[] args) {
 		ArrayList<String> as = new ArrayList<>();
 		as.add("aditya");
 		as.add("sumit");
 		as.add("arvind");
-		
+
 		Iterator itr = as.iterator();
-		while(itr.hasNext()) {
+		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
 	}
 }
 
-class linkedList{
+class linkedList {
 	public static void main(String[] args) {
 		LinkedList<String> ls = new LinkedList<>();
 		ls.add("ayan");
@@ -40,13 +40,13 @@ class linkedList{
 	}
 }
 
-class vector{
+class vector {
 	public static void main(String[] args) {
 		Vector<String> vs = new Vector<>();
 		vs.add("aditya");
 		vs.add("rupali");
 		vs.add("rakhi");
-		
+
 		Iterator<String> itr = vs.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
@@ -54,17 +54,41 @@ class vector{
 	}
 }
 
-class stack{
+class stack {
 	public static void main(String[] args) {
 		Stack<Integer> ss = new Stack<>();
 		ss.add(1);
 		ss.add(2);
 		ss.add(3);
-		
+
 		Iterator<Integer> itr = ss.iterator();
-		while(itr.hasNext()) {
+		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+
+	}
+}
+
+interface it {
+	class ci {
+		interface iit {
+			public void ii();
+		}
+
+		class ic implements ci.iit {
+			public void ii() {
+				System.out.println("inner interface");
+			}
+		}
 		
+	}
+
+		class maindemo implements it {
+			public static void main(String[] args) {
+				System.out.println("kya re pagal");
+				
+
+			}
+		}
 	}
 }
