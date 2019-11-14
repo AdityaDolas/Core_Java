@@ -3,6 +3,7 @@ package com.aditya.jaca2;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Stack;
 import java.util.Vector;
 
 public class CollectionsExamples {
@@ -50,5 +51,20 @@ class vector{
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+	}
+}
+
+class stack{
+	public static void main(String[] args) {
+		Stack<Integer> ss = new Stack<>();
+		ss.add(1);
+		ss.add(2);
+		ss.add(3);
+		
+		Iterator<Integer> itr = ss.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
 	}
 }
