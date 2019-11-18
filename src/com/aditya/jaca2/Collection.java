@@ -3,10 +3,14 @@ package com.aditya.jaca2;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Stack;
 import java.util.Vector;
 
-public class CollectionsExamples {
+import com.aditya.jaca2.it.ci.ic;
+
+public class Collection {
 	public static void main(String[] args) {
 		System.out.println("this file contains all the examples of collections.");
 	}
@@ -80,15 +84,54 @@ interface it {
 				System.out.println("inner interface");
 			}
 		}
-		
+
 	}
 
-		class maindemo implements it {
-			public static void main(String[] args) {
-				System.out.println("kya re pagal");
-				
+	class maindemo implements it {
+		public static void main(String[] args) {
+			System.out.println("kya re pagal");
+			ci obj = new ci();
+			
+			
+			
 
-			}
 		}
 	}
 }
+
+class queueue {
+	public static void main(String[] args) {
+		Queue<Integer> q = new PriorityQueue<>();
+		q.add(1);
+		q.add(2);
+		q.add(3);
+		q.add(4);
+		q.add(5);
+		q.add(6);
+
+		Iterator itr = q.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+	}
+}
+
+class BreakSplit{
+	
+	public static void main(String args[])
+	{
+		String name="Shubham Lokhande";
+		name.split(" ");
+		for(String i: name) {
+			System.out.println(name[i]);
+		}
+	}
+}
+
+
+
+
+
+
+
+
