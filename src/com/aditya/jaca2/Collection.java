@@ -87,16 +87,6 @@ interface it {
 
 	}
 
-	class maindemo implements it {
-		public static void main(String[] args) {
-			System.out.println("kya re pagal");
-			ci obj = new ci();
-			
-			
-			
-
-		}
-	}
 }
 
 class queueue {
@@ -115,23 +105,3 @@ class queueue {
 		}
 	}
 }
-
-class BreakSplit{
-	
-	public static void main(String args[])
-	{
-		String name="Shubham Lokhande";
-		name.split(" ");
-		for(String i: name) {
-			System.out.println(name[i]);
-		}
-	}
-}
-
-
-
-
-
-
-
-
