@@ -16,16 +16,29 @@ class areaOfCircle1 {
 	}
 }
 
-class compInterest{
+class compInterest {
 	public static void main(String[] args) {
-		double a, p, r, n,ci;
+		double a, p, r, n, ci;
 		p = 49;
 		r = 8;
 		n = 33;
-		a = p* Math.pow((1+(r/100.0)), n);
-		ci = a-p;
-		System.out.println("Amount = "+a);
-		System.out.println("Compound Interest = "+ci);
+		a = p * Math.pow((1 + (r / 100.0)), n);
+		ci = a - p;
+		System.out.println("Amount = " + a);
+		System.out.println("Compound Interest = " + ci);
 	}
 }
 
+class boolTest {
+	public static void main(String[] args) {
+		boolean b;
+		b = false;
+		System.out.println("b is false.");
+		b = true;
+		System.out.println("b is true.");
+
+		if (b) {
+			System.out.println("This is executed.");
+		}
+	}
+}
