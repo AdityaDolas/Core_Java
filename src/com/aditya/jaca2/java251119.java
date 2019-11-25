@@ -1,5 +1,7 @@
 package com.aditya.jaca2;
 
+import com.aditya.java.StaticInner;
+
 public class java251119 {
 	public static void main(String[] args) {
 		System.out.println("Java 25/11/19 practice");
@@ -40,5 +42,16 @@ class boolTest {
 		if (b) {
 			System.out.println("This is executed.");
 		}
+	}
+}
+
+class constant1{
+	static final int nom= 12;
+	static final double Pi = (double) 22/7;
+	
+	public static void main(String[] args) {
+	System.out.println("Number of months:"+nom);
+	System.out.println("Pi:"+Pi);
+		
 	}
 }
