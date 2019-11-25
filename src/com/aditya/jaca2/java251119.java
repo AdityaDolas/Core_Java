@@ -61,6 +61,14 @@ class finalVar{
 	public static void main(String[] args) {
 		double r= 10.0, a;
 		a= pi*r*r;
-		System.out.println("Area of circle: "+a);
+		System.out.println("Area of circle: 	"+a);
 	}
+}
+
+class varDeclareAtEnd{
+	public static void main(String[] args) {
+		msg="Hello Java Developer.";
+		System.out.println("Message: "+msg);
+	}
+	static String msg;
 }
