@@ -45,30 +45,46 @@ class boolTest {
 	}
 }
 
-class constant1{
-	static final int nom= 12;
-	static final double Pi = (double) 22/7;
-	
+class constant1 {
+	static final int nom = 12;
+	static final double Pi = (double) 22 / 7;
+
 	public static void main(String[] args) {
-	System.out.println("Number of months:"+nom);
-	System.out.println("Pi:"+Pi);
-		
+		System.out.println("Number of months:" + nom);
+		System.out.println("Pi:" + Pi);
+
 	}
 }
 
-class finalVar{
-	final static double pi= 3.14159;
+class finalVar {
+	final static double pi = 3.14159;
+
 	public static void main(String[] args) {
-		double r= 10.0, a;
-		a= pi*r*r;
-		System.out.println("Area of circle: 	"+a);
+		double r = 10.0, a;
+		a = pi * r * r;
+		System.out.println("Area of circle: " + a);
 	}
 }
 
-class varDeclareAtEnd{
+class varDeclareAtEnd {
 	public static void main(String[] args) {
-		msg="Hello Java Developer.";
-		System.out.println("Message: "+msg);
+		msg = "Hello Java Developer.";
+		System.out.println("Message: " + msg);
 	}
+
 	static String msg;
 }
+
+class swapWithThirdNo {
+	public static void main(String[] args) {
+		int a = 10, b = 20, t;
+		System.out.println("Before swapping:");
+		System.out.println("a=" + a + " " + "b=" + b);
+		t = a;
+		a = b;
+		b = t;
+		System.out.println("After swapping:");
+		System.out.println("a=" + a + " " + "b=" + b);
+	}
+}
+
