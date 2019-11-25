@@ -55,3 +55,12 @@ class constant1{
 		
 	}
 }
+
+class finalVar{
+	final static double pi= 3.14159;
+	public static void main(String[] args) {
+		double r= 10.0, a;
+		a= pi*r*r;
+		System.out.println("Area of circle: "+a);
+	}
+}
