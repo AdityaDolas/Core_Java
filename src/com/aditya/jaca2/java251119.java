@@ -1,5 +1,7 @@
 package com.aditya.jaca2;
 
+import java.io.Console;
+
 import javax.print.attribute.standard.MediaName;
 
 import com.aditya.java.StaticInner;
@@ -102,5 +104,17 @@ class swappingWithoutThirdVariable {
 		System.out.println("a=" + a + " " + "b=" + b);
 		
 
+	}
+}
+
+class console1{
+	public static void main(String[] args) {
+		Console cn=System.console();
+		int n;
+		
+		System.out.println("Enter a Number:");
+		n=Integer.parseInt(cn.readLine());
+		
+		System.out.println("The given number:"+n);
 	}
 }
