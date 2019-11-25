@@ -15,3 +15,17 @@ class areaOfCircle1 {
 		System.out.println("Area of circle is = " + area);
 	}
 }
+
+class compInterest{
+	public static void main(String[] args) {
+		double a, p, r, n,ci;
+		p = 49;
+		r = 8;
+		n = 33;
+		a = p* Math.pow((1+(r/100.0)), n);
+		ci = a-p;
+		System.out.println("Amount = "+a);
+		System.out.println("Compound Interest = "+ci);
+	}
+}
+
