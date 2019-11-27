@@ -1,6 +1,7 @@
 package com.aditya.jaca2;
 
 import java.io.Console;
+import java.util.Scanner;
 
 import javax.print.attribute.standard.MediaName;
 
@@ -96,25 +97,37 @@ class swappingWithoutThirdVariable {
 	public static void main(String[] args) {
 		int a = 10, b = 20;
 		System.out.println("a=" + a + " " + "b=" + b);
-		
-		a=a+b;
-		b=a-b;
-		a=a-b;
-		
+
+		a = a + b;
+		b = a - b;
+		a = a - b;
+
 		System.out.println("a=" + a + " " + "b=" + b);
-		
 
 	}
 }
 
-class console1{
+class console1 {
 	public static void main(String[] args) {
-		Console cn=System.console();
+		Console cn = System.console();
 		int n;
-		
+
 		System.out.println("Enter a Number:");
-		n=Integer.parseInt(cn.readLine());
-		
-		System.out.println("The given number:"+n);
+		n = Integer.parseInt(cn.readLine());
+
+		System.out.println("The given number:");
+	}
+}
+
+class evenOdd19 {
+	public static void main(String[] args) {
+		System.out.println("Enter: ");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+
+		if (i % 2 == 0)
+			System.out.println(i + " is even.");
+		else
+			System.out.println(i + " is odd");
 	}
 }
