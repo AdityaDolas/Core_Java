@@ -131,3 +131,27 @@ class evenOdd19 {
 			System.out.println(i + " is odd");
 	}
 }
+
+class commision {
+	public static void main(String[] args) {
+		System.out.println("Enter: ");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		double comm = 0;
+
+		if (i > 0 && i < 10000) {
+			comm = 0;
+		System.out.println("Commission::" + comm);
+		}else
+		if (i > 10000 && i < 20000) {
+			comm = i * 0.05;
+		System.out.println("Commission::" + comm);
+		}else
+		if (i > 20000 && i < 30000) {
+			comm = i * 0.1;
+		System.out.println("Commission::" + comm);
+		}else {
+			System.out.println("Enter an integer.");
+		}
+	}
+}
