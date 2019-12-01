@@ -141,28 +141,26 @@ class commision {
 
 		if (i > 0 && i < 10000) {
 			comm = 0;
-		System.out.println("Commission::" + comm);
-		}else
-		if (i > 10000 && i < 20000) {
+			System.out.println("Commission::" + comm);
+		} else if (i > 10000 && i < 20000) {
 			comm = i * 0.05;
-		System.out.println("Commission::" + comm);
-		}else
-		if (i > 20000 && i < 30000) {
+			System.out.println("Commission::" + comm);
+		} else if (i > 20000 && i < 30000) {
 			comm = i * 0.1;
-		System.out.println("Commission::" + comm);
-		}else {
+			System.out.println("Commission::" + comm);
+		} else {
 			System.out.println("Enter an integer.");
 		}
 	}
 }
 
-class day{
+class day {
 	public static void main(String[] args) {
 		System.out.println("Enter:");
-		Scanner sc=new Scanner(System.in);
-		int day=sc.nextInt();
-		
-		switch(day) {
+		Scanner sc = new Scanner(System.in);
+		int day = sc.nextInt();
+
+		switch (day) {
 		case 1:
 			System.out.println("Monday");
 			break;
@@ -184,9 +182,43 @@ class day{
 		case 7:
 			System.out.println("Sunday");
 			break;
-				
+
 		default:
 			System.out.println("Wrong day number.");
 		}
+	}
+}
+
+class eo {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+
+		if (i % 2 == 0)
+			System.out.println(i + " is even.");
+		else
+			System.out.println(i + " is odd.");
+	}
+}
+
+class eoSum {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+
+		int sumOfEven = 0, sumOfOdd = 0;
+		int i;
+		for (i = 0; i <= a; i++) {
+			if (i % 2 == 0) {
+				sumOfEven = sumOfEven + i;
+			} else {
+				sumOfOdd = sumOfOdd + i;
+			}
+		}
+		System.out.println("Sum Of Even Number:" + sumOfEven);
+		System.out.println("Sum Of Odd Number:" + sumOfOdd);
+
 	}
 }
