@@ -222,3 +222,17 @@ class eoSum {
 
 	}
 }
+
+class factorial{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		int i= sc.nextInt();
+		int j;
+		int f=1;
+		for(j=i;j>=1;j--) {
+			f=f*j;
+		}
+		System.out.println("the factorial of "+i+" is "+f+".");
+	}
+}
