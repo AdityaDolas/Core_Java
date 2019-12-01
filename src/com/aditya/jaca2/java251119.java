@@ -295,3 +295,23 @@ class rightPattern {
 		}
 	}
 }
+
+class armstrongNumber{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int r,x=n,sum=0;
+		while(n!=0) {
+			r=n%10;
+			sum=sum+(r*r*r);
+			n=n/10;
+		}
+		if(sum==x) {
+			System.out.println("Number "+x+" is Armstrong.");
+		}
+		else {
+			System.out.println("Number "+x+" is not Armstrong.");
+		}
+	}
+}
