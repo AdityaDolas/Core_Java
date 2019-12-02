@@ -6,6 +6,7 @@ import java.util.Scanner;
 import javax.print.attribute.standard.MediaName;
 
 import com.aditya.java.StaticInner;
+import com.aditya.java.student11;
 
 public class java251119 {
 	public static void main(String[] args) {
@@ -313,5 +314,34 @@ class armstrongNumber{
 		else {
 			System.out.println("Number "+x+" is not Armstrong.");
 		}
+	}
+}
+
+class evenOdd21219{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();
+		
+		if(i%2==0) {
+			System.out.println(i+" is a even number.");
+		} else {
+			System.out.println(i+" is odd number.");
+		}
+	}
+}
+
+class numberOfDigits{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();
+		int n=0;
+		
+		while(i!=0) {
+			i=i/10;
+			n++;
+		}
+		System.out.println("Number of digits are:"+n);
 	}
 }
