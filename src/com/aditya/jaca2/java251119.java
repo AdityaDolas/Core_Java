@@ -345,3 +345,14 @@ class numberOfDigits{
 		System.out.println("Number of digits are:"+n);
 	}
 }
+
+class bbSort{
+	public static void main(String[] args) {
+		String s="Aditya";
+		System.out.println(s);
+		StringBuilder sb=new StringBuilder();
+		sb.append(s);
+		sb.reverse();
+		System.out.println(sb);
+	}
+}
