@@ -297,62 +297,84 @@ class rightPattern {
 	}
 }
 
-class armstrongNumber{
+class armstrongNumber {
 	public static void main(String[] args) {
 		System.out.println("Enter:");
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int r,x=n,sum=0;
-		while(n!=0) {
-			r=n%10;
-			sum=sum+(r*r*r);
-			n=n/10;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int r, x = n, sum = 0;
+		while (n != 0) {
+			r = n % 10;
+			sum = sum + (r * r * r);
+			n = n / 10;
 		}
-		if(sum==x) {
-			System.out.println("Number "+x+" is Armstrong.");
-		}
-		else {
-			System.out.println("Number "+x+" is not Armstrong.");
-		}
-	}
-}
-
-class evenOdd21219{
-	public static void main(String[] args) {
-		System.out.println("Enter:");
-		Scanner sc=new Scanner(System.in);
-		int i=sc.nextInt();
-		
-		if(i%2==0) {
-			System.out.println(i+" is a even number.");
+		if (sum == x) {
+			System.out.println("Number " + x + " is Armstrong.");
 		} else {
-			System.out.println(i+" is odd number.");
+			System.out.println("Number " + x + " is not Armstrong.");
 		}
 	}
 }
 
-class numberOfDigits{
+class evenOdd21219 {
 	public static void main(String[] args) {
 		System.out.println("Enter:");
-		Scanner sc=new Scanner(System.in);
-		int i=sc.nextInt();
-		int n=0;
-		
-		while(i!=0) {
-			i=i/10;
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+
+		if (i % 2 == 0) {
+			System.out.println(i + " is a even number.");
+		} else {
+			System.out.println(i + " is odd number.");
+		}
+	}
+}
+
+class numberOfDigits {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		int n = 0;
+
+		while (i != 0) {
+			i = i / 10;
 			n++;
 		}
-		System.out.println("Number of digits are:"+n);
+		System.out.println("Number of digits are:" + n);
 	}
 }
 
-class bbSort{
+class bbSort {
 	public static void main(String[] args) {
-		String s="Aditya";
+		String s = "Aditya";
 		System.out.println(s);
-		StringBuilder sb=new StringBuilder();
+		StringBuilder sb = new StringBuilder();
 		sb.append(s);
 		sb.reverse();
 		System.out.println(sb);
+	}
+}
+
+class charsort {
+	public static void main(String[] args) {
+		String s = "Aditya";
+		System.out.println(s);
+		char[] c = s.toCharArray();
+		for (int i = s.length() - 1; i >= 0; i--) {
+			System.out.print(c[i]);
+		}
+	}
+}
+
+class splitit {
+	public static void main(String[] args) {
+		String s = "Aditya Dolas b";
+		//System.out.println(s);
+		String[] sa = s.split(" ");
+		for (String a : sa) {
+			System.out.println(a);
+		}
+
 	}
 }
