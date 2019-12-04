@@ -369,11 +369,14 @@ class charsort {
 
 class splitit {
 	public static void main(String[] args) {
-		String s = "Aditya Dolas b";
-		//System.out.println(s);
-		String[] sa = s.split(" ");
-		for (String a : sa) {
-			System.out.println(a);
+		String s = "Aditya@Dolas@b";
+		// System.out.println(s);
+		String[] sa = s.split("@");
+		// for (String a : sa) {
+		// System.out.println(a);
+		for (int i = sa.length - 1; i >= 0; i--) {
+			System.out.print(" " + sa[i]);
+
 		}
 
 	}
