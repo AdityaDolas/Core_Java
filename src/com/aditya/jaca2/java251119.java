@@ -404,8 +404,74 @@ class arraySort {
 			System.out.print(a[i] + " ");
 		}
 		System.out.println("\nReverse Array:");
-		for (int i = a.length-1; i >=0; i--) {
+		for (int i = a.length - 1; i >= 0; i--) {
 			System.out.print(a[i] + " ");
+		}
+	}
+}
+
+class bbSortArray {
+	public static void main(String[] args) {
+		int[] a = { 5, 7, 6, 4, 2, 3, 1 };
+		System.out.println("Unsorted Array:");
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i] + " ");
+		}
+
+		for (int i = 0; i < a.length - 1; i++) {
+			for (int j = 0; j < (a.length - 1 - i); j++) {
+				if (a[j] > a[j + 1]) {
+					int t = a[j];
+					a[j] = a[j + 1];
+					a[j + 1] = t;
+				}
+			}
+		}
+
+		System.out.println("\nSorted Array:");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i] + " ");
+		}
+
+		System.out.println("\nReverse:");
+		for (int i = a.length - 1; i >= 0; i--) {
+			System.out.print(a[i] + " ");
+		}
+	}
+}
+
+class eoeo {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+
+		if (a % 2 == 0) {
+			System.out.println(a + " is even.");
+		} else {
+			System.out.println(a + " is odd");
+		}
+	}
+}
+
+class armastrongNumberr {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int sum=0;
+		int x=a;
+		while (a > 0) {
+			int r = a % 10;
+			System.out.println("r===>"+r);
+			sum = sum+(r*r*r);
+			a=a/10;
+		}
+		if(sum==x) {
+			System.out.println("is armstrong");
+		}else {
+			System.out.println("not armstrong");
 		}
 	}
 }
