@@ -481,36 +481,50 @@ class findTheArmstrongNumber {
 		System.out.println("Enter:");
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
-		int temp,num,rem,counter=0;
-		for(int i=0; i<=a;i++) {
-			temp=i;
-			num=0;
-			while(temp!=0) {
-				rem=temp%10;
-				num=num+(rem*rem*rem);
-				temp=temp/10;
+		int temp, num, rem, counter = 0;
+		for (int i = 0; i <= a; i++) {
+			temp = i;
+			num = 0;
+			while (temp != 0) {
+				rem = temp % 10;
+				num = num + (rem * rem * rem);
+				temp = temp / 10;
 			}
-			if(i==num) {
-				if(counter==0) {
+			if (i == num) {
+				if (counter == 0) {
 					System.out.println("arm numbers are:");
 				}
-				System.out.println(i+" ");
+				System.out.println(i + " ");
 				counter++;
 			}
 		}
-		if(counter==0) {
+		if (counter == 0) {
 			System.out.println("no arm number.");
 		}
 
 	}
 }
 
-
-
-
-
-
-
-
-
-
+class sortsort {
+	public static void main(String[] args) {
+		int[] a = { 4, 6, 1, 3, 7, 8, 9 };
+		System.out.println("\nUnsorted Array:");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i]+" ");
+		}
+		int t;
+		for (int i = 0; i < a.length - 1; i++) {
+			for (int j = 0; j < (a.length - 1 - i); j++) {
+				if (a[j] > a[j + 1]) {
+					t = a[j];
+					a[j] = a[j + 1];
+					a[j + 1] = t;
+				}
+			}
+		}
+		System.out.println("\nSorted Array:");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i]+" ");
+		}
+	}
+}
