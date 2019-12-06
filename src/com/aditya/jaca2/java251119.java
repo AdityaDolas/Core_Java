@@ -460,18 +460,57 @@ class armastrongNumberr {
 		System.out.println("Enter:");
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
-		int sum=0;
-		int x=a;
-		while (a > 0) {
+		int sum = 0;
+		int x = a;
+		while (a != 0) {
 			int r = a % 10;
-			System.out.println("r===>"+r);
-			sum = sum+(r*r*r);
-			a=a/10;
+			System.out.println("r===>" + r);
+			sum = sum + (r * r * r);
+			a = a / 10;
 		}
-		if(sum==x) {
+		if (sum == x) {
 			System.out.println("is armstrong");
-		}else {
+		} else {
 			System.out.println("not armstrong");
 		}
 	}
 }
+
+class findTheArmstrongNumber {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int temp,num,rem,counter=0;
+		for(int i=0; i<=a;i++) {
+			temp=i;
+			num=0;
+			while(temp!=0) {
+				rem=temp%10;
+				num=num+(rem*rem*rem);
+				temp=temp/10;
+			}
+			if(i==num) {
+				if(counter==0) {
+					System.out.println("arm numbers are:");
+				}
+				System.out.println(i+" ");
+				counter++;
+			}
+		}
+		if(counter==0) {
+			System.out.println("no arm number.");
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
