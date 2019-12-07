@@ -1,12 +1,8 @@
 package com.aditya.jaca2;
 
 import java.io.Console;
+import java.util.Arrays;
 import java.util.Scanner;
-
-import javax.print.attribute.standard.MediaName;
-
-import com.aditya.java.StaticInner;
-import com.aditya.java.student11;
 
 public class java251119 {
 	public static void main(String[] args) {
@@ -510,7 +506,7 @@ class sortsort {
 		int[] a = { 4, 6, 1, 3, 7, 8, 9 };
 		System.out.println("\nUnsorted Array:");
 		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]+" ");
+			System.out.print(a[i] + " ");
 		}
 		int t;
 		for (int i = 0; i < a.length - 1; i++) {
@@ -524,7 +520,153 @@ class sortsort {
 		}
 		System.out.println("\nSorted Array:");
 		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]+" ");
+			System.out.print(a[i] + " ");
 		}
+	}
+}
+
+class palipali {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(), temp = 0, r, z = a;
+
+		while (a > 0) {
+			r = a % 10;
+			temp = temp * 10 + r;
+			a = a / 10;
+		}
+		if (temp == z) {
+			System.out.println("pali");
+		} else {
+			System.out.println("not pali");
+		}
+	}
+}
+
+class eeoo {
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+
+		if (a % 2 == 0) {
+			System.out.println("is even");
+		} else {
+			System.out.println("is odd");
+		}
+	}
+}
+
+class primePrime {
+	public static void main(String[] args) {
+		for (;;) {
+			System.out.println("Enter:");
+			Scanner sc = new Scanner(System.in);
+			int a = sc.nextInt();
+			boolean flag = true;
+			for (int i = 2; i <= a / 2; i++) {
+				if (a % i == 0) {
+					flag = false;
+					break;
+				}
+			}
+			if (flag == true) {
+				System.out.println(a + " is prime.");
+			} else {
+				System.out.println(a + " is not prime.");
+			}
+		}
+	}
+}
+
+class armIsStrong{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int t=0,x=a;
+
+		while(a!=0) {
+			int r=a%10;
+			t=t+(r*r*r);
+			a=a/10;
+		}
+		if(t==x) {
+			System.out.println(x+" is armstrong number.");
+		} else {
+			System.out.println(x+" is not an armstrong number.");
+		}
+	}
+}
+
+class reverseStringUsingChar{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		
+		char[] ca=s.toCharArray();
+		for(int i=ca.length-1;i>=0;i--) {
+			System.out.print(ca[i]+" ");
+		}
+	}
+}
+
+class reverseString{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		
+		String[] sa=s.split(" ");
+		for(String x:sa) {
+			System.out.print(x+", ");
+		}
+		System.out.println();
+		for(int i=sa.length-1; i>=0; i--) {
+			System.out.print(sa[i]+" ");
+		}
+	}
+}
+
+class digitCount{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int c=0;
+		while(a!=0) {
+			a=a/10;
+			c++;
+		}
+		System.out.println(c);
+	}
+}
+
+class sortTheArray{
+	public static void main(String[] args) {
+		System.out.println("Enter length of an array:");
+		Scanner sc=new Scanner(System.in);
+		int length=sc.nextInt();
+		
+		int[] myArray=new int[length];
+		System.out.println("Enter elments:");
+		for(int i=0; i<length; i++) {
+			myArray[i]=sc.nextInt();
+		}
+		System.out.println(Arrays.toString(myArray));
+		
+		for(int i=0; i<length-1;i++) {
+			for(int j=0; j<(length-1-i);j++) {
+				if(myArray[j]>myArray[j+1]) {
+					int t=myArray[j];
+					myArray[j]=myArray[j+1];
+					myArray[j+1]=t;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(myArray));
+		
 	}
 }
