@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import javax.print.attribute.standard.MediaName;
+
 public class java251119 {
 	public static void main(String[] args) {
 		System.out.println("Java 25/11/19 practice");
@@ -742,5 +744,18 @@ class facto{
 			f=f+i;
 		}
 		System.out.println(f);
+	}
+}
+
+class rs{
+	public static void main(String[] args) {
+		System.out.println("Enter:");
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		
+		char[] sa=s.toCharArray();
+		for(int i=sa.length-1; i>=0; i--) {
+			System.out.print(sa[i]+"");
+		}
 	}
 }
