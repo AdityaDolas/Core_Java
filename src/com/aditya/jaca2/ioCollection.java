@@ -1,6 +1,7 @@
 package com.aditya.jaca2;
 //Java program to illustrate 
 
+import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -135,6 +136,32 @@ class ioBuffer {
 
 		} catch (Exception e) {
 			System.out.println(e);
+		}
+	}
+}
+
+// Read file using bufferReader
+
+class iobuff{
+	public static void main(String[] args) {
+		try {
+			
+			FileInputStream fin=new FileInputStream("E:\\Programming\\adi.txt");
+			BufferedInputStream b=new BufferedInputStream(fin);
+			
+			int i;
+			
+			while((i=b.read())!=-1) {
+				System.out.print((char)i);
+			}
+			
+			b.close();
+			fin.close();
+			
+		} catch (Exception e) {
+			
+			System.out.println(e);
+			
 		}
 	}
 }
