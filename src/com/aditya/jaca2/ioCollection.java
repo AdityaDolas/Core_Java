@@ -1,6 +1,8 @@
 package com.aditya.jaca2;
 //Java program to illustrate 
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -105,6 +107,31 @@ class ioReadAllCharacters {
 			while ((i = fin.read()) != -1) {
 				System.out.print((char) i);
 			}
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+// Write file using bufferReader
+
+class ioBuffer {
+	public static void main(String[] args) {
+		try {
+			FileOutputStream fin = new FileOutputStream("E:\\Programming\\adi.txt");
+			BufferedOutputStream bo = new BufferedOutputStream(fin);
+
+			String s = "welcome";
+
+			byte b[] = s.getBytes();
+
+			bo.write(b);
+			bo.flush();
+			bo.close();
+			fin.close();
+
+			System.out.println("Success...");
 
 		} catch (Exception e) {
 			System.out.println(e);
