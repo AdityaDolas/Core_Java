@@ -1,6 +1,7 @@
 package com.aditya.jaca2;
 //Java program to illustrate 
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 //Java.util.HashMap 
@@ -68,6 +69,42 @@ class ioOut {
 			fout.close();
 
 			System.out.println("Success...");
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+// Read single character
+
+class ioReadCharacter {
+	public static void main(String[] args) {
+		try {
+			FileInputStream fin = new FileInputStream("E:\\Programming\\adi.txt");
+			int i = fin.read();
+			System.out.println((char) i);
+
+			fin.close();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}
+
+// Read all characters
+
+class ioReadAllCharacters {
+	public static void main(String[] args) {
+		try {
+			FileInputStream fin = new FileInputStream("E:\\Programming\\adi.txt");
+
+			int i = 0;
+
+			while ((i = fin.read()) != -1) {
+				System.out.print((char) i);
+			}
 
 		} catch (Exception e) {
 			System.out.println(e);
