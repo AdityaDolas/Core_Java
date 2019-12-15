@@ -5,7 +5,11 @@ import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 //Java.util.HashMap 
 
@@ -142,26 +146,88 @@ class ioBuffer {
 
 // Read file using bufferReader
 
-class iobuff{
+class iobuff {
 	public static void main(String[] args) {
 		try {
-			
-			FileInputStream fin=new FileInputStream("E:\\Programming\\adi.txt");
-			BufferedInputStream b=new BufferedInputStream(fin);
-			
+
+			FileInputStream fin = new FileInputStream(
+					"C:\\Users\\Aditya\\Downloads\\Documents\\LoudCloud\\courses.csv");
+			BufferedInputStream b = new BufferedInputStream(fin);
+
 			int i;
-			
-			while((i=b.read())!=-1) {
-				System.out.print((char)i);
+
+			while ((i = b.read()) != -1) {
+				System.out.print((char) i);
 			}
-			
+
 			b.close();
 			fin.close();
-			
+
 		} catch (Exception e) {
-			
+
 			System.out.println(e);
-			
+
 		}
 	}
+}
+
+
+
+class Hello {
+
+    public static void main(String[] args) {
+
+        String csvFile = "C:\\Users\\Aditya\\Downloads\\Documents\\LoudCloud\\courses.csv";
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+
+        try {
+
+            FileWriter csvWriter = new FileWriter("C:\\Users\\Aditya\\Downloads\\Documents\\LoudCloud\\newcourses.csv");
+
+
+            br = new BufferedReader(new FileReader(csvFile));
+            int i=0;
+            while ((line = br.readLine()) != null) {
+                if(i==0){
+                    i=1;
+                    csvWriter.append(line);
+                    csvWriter.append("\n");
+                    continue;
+                }
+                // use comma as separator
+                String[] country = line.split(cvsSplitBy);
+                String[] Date=country[4].split("/");
+                String yy=Date[2];
+                String dd=Date[1];
+                String mm=Date[0];
+
+                country[4]=yy+"/"+mm+"/"+dd;
+                for(int a=0; a<5; a++){
+                        csvWriter.append(country[a]);
+                    csvWriter.append(",");
+
+                }
+                csvWriter.append("\n");
+            }
+            csvWriter.flush();
+            csvWriter.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
 }
